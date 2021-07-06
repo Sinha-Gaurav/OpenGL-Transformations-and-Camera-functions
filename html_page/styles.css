@@ -1,0 +1,88 @@
+.segment {
+    margin: 10px;
+    border-style: ridge;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: aqua;
+  }
+  
+  .title {
+    font-size: xx-large;
+    text-align: center;
+    border-radius: 10px;
+    background-color: wheat;
+    padding: 10px;
+  }
+  
+  .content {
+    font-size: large;
+    padding: 10px;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: 95%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .code .image {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .code img {
+    height: 90%;
+  }
+  
+  .terminal-set {
+    display: flex;
+  }
+  
+  .terminal {
+    flex: 1;
+  }
+  
+  .terminal .image {
+    width: 350px;
+    height: 400px;
+  }
+  
+  .terminal img {
+    object-fit: fill;
+  }
+  
+  .wide img {
+    object-fit: fill;
+  }
+  
+  .one-line-code .image {
+    width: 950px;
+    height: 170px;
+  }
+  
+  .one-line-code img {
+    height: 80%;
+  }
+  
+  .image {
+    width: 600px;
+    height: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 5px;
+  }
+  
+  .label {
+    font-size: medium;
+    text-align: center;
+  }
+  
+  .issue .label {
+    margin: -5px;
+  }
+  

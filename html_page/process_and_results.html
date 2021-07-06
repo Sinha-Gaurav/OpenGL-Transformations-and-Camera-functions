@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Process and Results</title>
+    <meta name="description" content="Process and Results">
+    <meta name="author" content="PSK">
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <div class="segment">
+        <div class="title">
+            Objective
+        </div>
+        <div class="content">
+            Understand openGL transformations, matrix stack operations, and 3D viewing pipeline.
+        </div>
+    </div>
+    <div class="segment">
+        <div class="title">
+            Loading Models
+        </div>
+        <div class="content">
+            We used the assimp library to import models stored as .obj files to OpenGL. Three models were made using blender and four models were downloaded from <a href="https://free3d.com/">free3d.com</a>.
+
+            <div style="text-align:left">
+                The seven models are:-
+                <ol>
+                    <li>Car</li>
+                    <li>Table</li>
+                    <li>Chair</li>
+                    <li>Potted plant</li>
+                    <li>Teapot with cups</li>
+                    <li>Mario character</li>
+                    <li>Platform</li>
+                </ol>
+
+
+
+            </div>
+
+        </div>
+    </div>
+    <div class="segment">
+        <div class="title">
+            Using Transformations
+        </div>
+        <div class="content">
+            We used opengl transformations to relocate the models and create a scene of our choice. Each model was given a color(which was sent to the fragment shader through a uniform) and a transformation matrix which positions the model into its appropriate place in the scene.
+            Once the transformation matrices were computed for each model, they are used inside the render loop before each draw call of the model.
+            <div class="image">
+                <img src="images/1.png">
+            </div>
+            <div class="image">
+                <img src="images/2.png">
+            </div>
+            <div class="image">
+                <img src="images/3.png">
+            </div>
+            <div class="image">
+                <img src="images/4.png">
+            </div>
+            <div class="image">
+                <img src="images/5.png">
+                <div class="label">
+                    Screenshots of different angles of the scene
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+    </div>
+    <div class="segment">
+        <div class="title">
+            Camera Functions
+        </div>
+        <div class="content">
+            We used the glm library to implement camera functions to move around in our scene using keyboard and mouse as inputs.
+
+            <div style="text-align:left">
+                There are 3 main types of camera functions implemented.
+                <ol>
+                    <li>Pan: Pan helps in moving the camera to different positions and we used the keys W, A, S, D, Q, E for forward, backward, left, right, up and down respectively.</li>
+                    <li>Yaw, Pitch and Roll: These are the 3 rotations about v, u and n directions respectively.</li>
+                    <li>Zoom: This changes the distance of the center of projection to the front plane aka fov. </li>
+                </ol>
+
+
+
+            </div>
+            
+
+        </div>
+    </div>
+    <div class="segment">
+        <div class="title">
+            Thank you!
+        </div>
+</body>
+</html>
